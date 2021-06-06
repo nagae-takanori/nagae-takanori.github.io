@@ -1,1 +1,70 @@
-<h1>永江研究室</h1>
+<html>
+<head>
+<link rel="stylesheet" href="./pinyin.css">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./characters.js"></script>
+<script src="./poetry2.js"></script>
+<script src="./letters.js"></script>
+<script src="./pinyin2.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1><span class="program_name"></span> <span class="version"></span></h1>
+</div>
+
+<div id="sidebar">
+Author
+<input type="text" name="author"><br>
+Title
+<input type="text" name="title"><br>
+Text<br>
+<textarea rows=15 cols=20 name="poetry"></textarea><br>
+<button id="button1">Submit</button><br>
+<button id="button2">縱</button>
+<div id="debug"></div>
+</div><!-- sidebar -->
+
+<div id="sidebar2">
+<div class="menu"><div class="menutitle">Usage</div>
+<div class="box">
+Edit the poem text.
+Each line usually contains 5 or 7 characters.
+Press submit button to show the pinyin result.
+the author and title can be empty.
+<p>
+A white hanzi character in a black background box is 「仄 (zè)」。
+A black character in white is 「平 (píng)」。
+A gray background indicates the character can have multiple accents 「平」 or 「仄」 (The accent depends on the usage of the character)。
+Rhyme characters are simultaneously highlighted in yellow when hovered.
+Green highlights are 「通韻」, that is, they have similar rhymes。
+Red hanzi characters are currently not recognized by this software. 
+You may try other variant characters.
+</div>
+</div>
+
+<div class="menu"><div class="menutitle">About this software</div>
+<div class="box">
+<span class="program_name"></span> ver. <span class="version"></span> by NAGAE Takanori<br>
+
+The Mandarin pronunciations are borrowed from the dataset
+<a href="https://www.mdbg.net/chinese/dictionary?page=cc-cedict">CC-CEDICT</a>,
+and this software is also provided under the Creative Commons 4.0 BY-NC-SA 
+<img src="120px-Cc-by-nc-sa_icon.svg.png">
+<p>
+You may send any comments to my twitter account
+<a href="https://twitter.com/nagae_takanori">@nagae_takanori</a>
+</div>
+</div>
+
+</div><!-- sidebar2 -->
+
+<div id="main"></div>
+<div id="messages"></div>
+</div>
+<div id="darkbox"></div>
+<div id="lightbox">this is dummy</div>
+<div id="baloon"></div>
+</body>
+</html>

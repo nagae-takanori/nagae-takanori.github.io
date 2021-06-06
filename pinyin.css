@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css); */
+/* @import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); */
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
+* {
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	/* font-family: 'cwTeXKai', serif; */
+	/* font-family: 'cwTeXFangSong', serif; */
+	/* font-family: 'Noto Sans TC', sans-serif; */
+	font-family: 'cwTeXMing', serif;
+}
+a {
+	text-decoration: none;
+}
+html {
+	height: 100%;
+}
+body {
+	position: absolute;
+	width: 100%;
+	background-image: url("bg.jpg");
+	height: 100%;
+}
+#wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#darkbox {
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: black;
+	display: none;
+	opacity: 0.5;
+}
+#lightbox {
+	position: relative;
+	padding: 50px;
+	width: 50%;
+	margin: 50px auto;
+	background-color: white;
+	display: none;
+}
+
+h1 {
+text-align: center;
+font-family: 'Times New Roman';
+text-decoration: none;
+transition: text-shadow 1s ease-out;
+}
+h1:hover {
+	color: #f22;
+	text-shadow: 0px 0px 5px #ffff00, 0px 0px 8px #ff8000, 0px -2px 10px #ff0000;
+}
+h2 { margin-top: 10px; text-align: center; }
+h3 { margin-top: 15px; }
+h4 { font-family: serif; font-weight: bold; }
+hr { margin: 10px 0 10px 0; }
+#header { margin-top: 10px; margin-bottom: 10px; }
+#sidebar { float:left; width: 200px; margin: 0 10px 20px 20px; }
+#sidebar2 { float:left; width: 260px; margin: 0 10px 20px 0; }
+#sidebar2 ul li {
+	/* list-style-type: none; */
+	padding: 2px 0 2px 5px;
+	width: 250px;
+	height: 16px;
+	display: inline;
+}
+#sidebar2 ul li:hover {
+	background-color: #dddddd;
+}
+.ex {
+	margin: 10px 0 0 0;
+	height: 400px;
+	overflow: hidden scroll;
+}
+#aux { margin: 20px; }
+#main { float: left; margin-bottom: 10px; }
+
+.charbox {
+	width: 50px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	margin: 0 0 2px 0;
+	padding: 5px 0 0 0;
+	overflow: visible;
+	position: relative;
+}
+.spacebox {
+	width: 2px;
+	height: 70px;
+	float: left;
+	margin: 0 0 2px 0;
+}
+.bg1 {
+	background-image: url("accent1.png");
+}
+.bg2 {
+	background-image: url("accent2.png");
+}
+.bg3 {
+	background-image: url("accent3.png");
+}
+.bg4 {
+	background-image: url("accent4.png");
+}
+.bg_unknown {
+	background-color: #888888;
+}
+.mruby {
+	font-family: serif;
+	font-size: small;
+	font-weight: bold;
+}
+#messages {
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	height: 700px;
+	overflow: scroll;
+	background-image: url("washi1.jpg");
+}
+.hidden {
+	visibility: hidden;
+}
+.large { font-size: 30px; border-radius: 16px; padding: 0px 5px; }
+.ruby { font-size: 15px; border-radius: 8px; padding: 0px 2px; }
+.oblique { color: white; background-color: black; }/* 仄は黒地に白 */
+.level { color: black; background-color: white; }/* 平は白地に黒 */
+.mixed { color: black; background-color: #aaaaaa; }/* 平仄いずれもあり得る */
+.unknown { color: black; background-color: red; }/* 判定不能 */
+
+.menu { margin: 3px 0 3px 0; width: 260px; }
+.menutitle { height: 20px;  text-align: center; background-image: url("washi2.jpg"); }
+.box { margin: 0 0 0 0; font-size: 14px; width: 245px; background-image: url("washi1.jpg"); display: none; border: solid 2px black; padding: 5px; text-align: left; font-family: serif; }
+.same { background-color: yellow; }
+.compat { background-color: lightgreen; }
+input { background-image: url("washi1.jpg"); font-family: width: 200px; }
+textarea { width: 200px; background-image: url("washi1.jpg");  }
+.moji { display: inline; }
+.hint { display: none; color: red; }
+
+.vline {
+	float: right;
+	margin: 0 1px;
+}
+.vline * {
+	margin: 2px 0px; padding: 4px 0px 0px 4px; height: 48px; width: 48px;
+	font-size: 45px;
+}
+.voblique { color: white; background-color: black;  }
+.vlevel { color: black; background-color: white;  }
+.vmixed { color: black; background-color: gray;  }
+.rhyme { border: 2px solid yellow; margin-left: -2px; }
+#baloon { position: absolute; display: none; background-color: white; padding: 2px; border-radius: 2px; }
+
